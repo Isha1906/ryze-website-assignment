@@ -1,0 +1,41 @@
+.pricing {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.pricing-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.pricing-card {
+  background: #9bcf0c;
+  padding: 2rem;
+  border-radius: 12px;
+   /* box-shadow: 0 10px 30px red; */
+}
+
+.pricing-card:hover{
+   box-shadow: 0 10px 30px rgb(253, 1, 1);
+}
+
+.pricing-card .price {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.pricing-card button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #070707;
+  color: white;
+  cursor: pointer;
+}
+
+.highlight {
+  border: 2px solid #6366f1;
+}

@@ -1,0 +1,8 @@
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: #05070f;
+  opacity: 0.6;
+  color: aliceblue;
+  position: sticky;
+}

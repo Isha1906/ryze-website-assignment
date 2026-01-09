@@ -1,0 +1,25 @@
+.testimonials {
+  padding: 4rem 2rem;
+  text-align: center;
+  
+}
+
+.testimonial-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background: #0b1225;
+  padding: 2rem;
+  border-radius: 12px;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  opacity: 0.7;
+}

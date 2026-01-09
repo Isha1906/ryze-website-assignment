@@ -1,0 +1,33 @@
+.testimonial-card {
+  background: #9bcf0c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+.testimonial-card:hover{
+
+ transform: translateY(-4px);
+  box-shadow: 0 10px 30px #c70c3a;
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.author strong {
+  display: block;
+  font-size: 15px;
+}
+
+.author span {
+  font-size: 13px;
+  color: #c70c3a;
+}
