@@ -4,8 +4,8 @@ This project is a redesigned frontend for the **RYZE AI** website, created as pa
 The goal was to recreate and modify the existing website content while showcasing my **React, CSS, and UI layout skills**.
 ---
 ## 🔗 Live Preview
-http://localhost:5173/  
-*(Local development preview)*
+https://ryze-website-assignment.vercel.app/
+
 ---
 ## 🛠 Tech Stack
 - **React (Vite)**
