@@ -38,25 +38,3 @@ This project demonstrates:
 
 ---
 
-## 📁 Project Structure
-src/
-│
-├── components/
-│ ├── Header.jsx
-│ ├── Hero.jsx
-│ ├── Testimonials.jsx
-│ └── Pricing.jsx
-│
-├── pages/
-│ ├── HomePage.jsx
-│ ├── FeaturesPage.jsx
-│ └── PricingPage.jsx
-│
-├── styles/
-│ ├── header.css
-│ ├── hero.css
-│ └── global.css
-│
-├── App.jsx
-└── main.jsx
-
