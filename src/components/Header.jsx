@@ -21,21 +21,24 @@ export default function Header() {
         <button
           className="menu-btn"
           onClick={() => setOpen(!open)}
+          aria-expanded={open}
           aria-label="Toggle menu"
         >
-          ☰
+          <span/>
+          <span/>
+          <span/>
         </button>
       </div>
 
       {/* Mobile Nav */}
-      {open && (
-        <div className="nav-mobile">
+      
+        <div className={`nav-mobile ${open ? 'open':''}`}>
           <a href="/" onClick={() => setOpen(false)}>Home</a>
           <a href="/features" onClick={() => setOpen(false)}>Features</a>
           <a href="/pricing" onClick={() => setOpen(false)}>Pricing</a>
-          <button className="cta mobile-cta">Book a Demo</button>
+          <button className="cta mobile-cta" onClick={()=>setOpen(false)}>Book a Demo</button>
         </div>
-      )}
+      
     </header>
   );
 }
