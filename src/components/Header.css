@@ -33,14 +33,6 @@
   align-items: center;
 }
 
-.nav-desktop:hover{
-  text-decoration: none;
-}
-
-.nav-mobile:hover{
-  text-decoration: none;
-}
-
 .logo{
   font-weight: 700;
   font-size: 40px;
@@ -57,30 +49,113 @@ nav a{
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
-  color: white;
+  color: rgb(15, 15, 15);
   cursor: pointer;
 }
 
 
-nav {
+.nav-desktop {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.nav-desktop a:hover {
+  text-decoration: none;
+}
+
+/* Hamburger Button */
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  color: #0c0c0c;
+}
+
+.menu-btn span{
+ height: 3px;
+  width: 100%;
+  background: currentColor;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.menu-btn[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-btn[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Nav Overlay */
+.nav-mobile {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: rgba(247, 167, 187, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.nav-mobile.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-mobile a,
+.nav-mobile .cta {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 18px;
+}
+
+.nav-mobile a:hover,
+.nav-mobile .cta:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Mobile First: Hide desktop nav */
+.nav-desktop {
   display: none;
 }
 
-.menu-btn {
-  display: block;
-}
-
-/* Tablet+ */
+/* Tablet+ Desktop */
 @media (min-width: 768px) {
-  nav {
-    display: flex;
-    gap: 24px;
-  }
-
   .menu-btn {
     display: none;
-    border: 1px black;
+  }
+  
+  .nav-desktop {
+    display: flex;
+  }
+  
+  .nav-mobile {
+    display: none;
   }
 }
+
+
 
 
