@@ -37,6 +37,10 @@
   text-decoration: none;
 }
 
+.nav-mobile:hover{
+  text-decoration: none;
+}
+
 .logo{
   font-weight: 700;
   font-size: 40px;
@@ -75,6 +79,7 @@ nav {
 
   .menu-btn {
     display: none;
+    border: 1px black;
   }
 }
 
