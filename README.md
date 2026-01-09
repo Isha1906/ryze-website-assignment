@@ -1,16 +1,40 @@
-# React + Vite
+# RYZE AI – Frontend Redesign (Assignment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a redesigned frontend for the **RYZE AI** website, created as part of a frontend developer internship assignment.  
+The goal was to recreate and modify the existing website content while showcasing my **React, CSS, and UI layout skills**.
+---
+## 🔗 Live Preview
+http://localhost:5173/  
+*(Local development preview)*
+---
+## 🛠 Tech Stack
+- **React (Vite)**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **Responsive Design (Flexbox & Media Queries)**
+---
+## ✨ Features Implemented
+- Sticky and semi-transparent header
+- Responsive navigation bar
+- Hero section with CTA buttons
+- Features section
+- Testimonials section
+- Pricing section
+- Clean, modern SaaS-style UI
+- Mobile-friendly layout
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Assignment Objective
 
-## React Compiler
+> Modify the content of the RYZE AI website and showcase frontend development skills.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project demonstrates:
+- Component-based architecture using React
+- Custom CSS styling without UI frameworks
+- Layout structuring and responsiveness
+- UI consistency and visual hierarchy
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
